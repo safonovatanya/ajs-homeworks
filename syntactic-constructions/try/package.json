@@ -1,13 +1,12 @@
 {
-  "name": "closures",
+  "name": "try",
   "version": "1.0.0",
-  "description": "clean-functions",
+  "description": "try... catch",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
     "test": "jest",
     "coverage": "jest --coverage",
     "preshow:coverage": "npm run coverage",
@@ -15,19 +14,23 @@
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/safonovatanya/ajs-homeworks/tree/master/syntactic-constructions"
+  },
   "keywords": [
-    "clean-functions"
+    "try"
   ],
-  "author": "Stegur",
+  "author": "Tanya",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.7.4",
-    "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
-    "eslint": "^6.7.1",
+    "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "html-loader": "^0.5.5",
@@ -40,10 +43,7 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
-    "core-js": "^3.4.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/safonovatanya/ajs-homeworks/tree/master/syntactic-constructions"
+    "@babel/polyfill": "^7.7.0",
+    "core-js": "^3.5.0"
   }
 }
