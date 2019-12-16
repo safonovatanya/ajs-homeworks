@@ -1,4 +1,13 @@
-import NumberNot from './basic';
+// TODO: write your code here
+const try = (count) => {
+    try {
+        if (/^[1-9]\d*$/.test(count) && count > 0) return Number(count);
+    throw new Error('Ввод некорректен');
+  } catch (e) {
+    return e;
+  }
+};
 
-const paragraf = document.getElementsByTagName('p')[0];
-paragraf.textContent = NumberNot('foo');
+export default try;
+    }
+}
