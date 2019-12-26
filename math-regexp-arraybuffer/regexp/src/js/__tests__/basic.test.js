@@ -41,3 +41,22 @@ test('Заканчивается подчеркиванием', () => {
   const received = validator.validateUsername('tortuga_');
   expect(received).toBe(false);
 });
+
+test('Валидация пройдена', () => {
+  const validator = new Validator();
+  const received = validator.validateUsername('AR4ANG3L');
+  expect(received).toBe(true);
+});
+
+test('Валидация пройдена', () => {
+  const validator = new Validator();
+  const received = validator.validateUsername('AL');
+  expect(received).toBe(true);
+});
+
+test('Валидация не пройдена', () => {
+  const validator = new Validator();
+  const received = validator.validateUsername('#8)');
+  expect(received).toBe(false);
+});
+
